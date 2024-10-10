@@ -1,0 +1,12 @@
+﻿div{
+    width: 200px;
+    height: 300px;
+    border: 5px solid blue;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 30px 50px;
+    /*Altera a posição da imagem com base nos valores selecionados (também aceita valores negativos), além de aceitar (center, left, bottom, right, top como parâmetros)*/
+}

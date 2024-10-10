@@ -1,1 +1,29 @@
-﻿
+﻿div{
+    width: 200px;
+    height: 300px;
+    border: 5px solid blue;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#fill{
+    /*Valor padrão da propriedade. Preenche todo o escopo da div, porém ao definir este parâmetro a imagem pode ficar distorcida por perder a proporção*/
+    object-fit: fill;
+}
+#contain{
+    /*Mantém a proporção original, mas vai ser redimensionada para caber no tamanho da div e não fica distorcida dessa forma*/
+    object-fit: contain;
+}
+#cover{
+    /*Corta o conteúdo da imagem que ultrapassa o elemento para preencher todo o espaço do container e não distorce a imagem*/
+    object-fit: cover;
+}
+#none{
+    /*A imagem ignora a altura e largura do elemento pai e mantém o seu tamanho original*/
+    object-fit: none;
+}
+#scale-down{
+    /*Exibe a imagem com as configurações do contain ou none, para deixar em uma resolução menor, dependendo do tamanho da imagem e do container */
+    object-fit: scale-down;
+}
