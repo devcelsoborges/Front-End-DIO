@@ -1,0 +1,32 @@
+﻿div{
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+    background-image: url("https://i0.wp.com/www.hawaiisurfpoint.com.br/wp-content/uploads/2017/01/saiba-mais-sobre-as-principais-competicoes-de-surf-do-mundo.jpeg?fit=1000%2C667&ssl=1");
+    background-size: 120px;
+    border: 1px blue solid;
+}
+#repeat{
+    background-repeat: repeat;
+    /*Comportamento padrão da propriedade, irá repetir a imagem dentro do container, cortando parte da imagem, caso as repetições nao caibam inteiras*/
+}
+#repeat-x{
+    background-repeat: repeat-x;
+    /*Define que a imagem se repita apenas no eixo x (horizontal)*/
+}
+#repeat-y{
+    background-repeat: repeat-y;
+    /*Define que a imagem se repita apenas no eixo y (vertical)*/
+}
+#space{
+    background-repeat: space;
+    /*Define espaço entre as repetições de imagem, tanto horizontal, quanto verticalmente, não cortando as repetições.*/
+}
+#round{
+    background-repeat: round;
+    /*A imagem se repetirá em ambas as direções, entretanto, irá cessar as repetições ao tocar a borda do container*/
+}
+#no-repeat{
+    background-repeat: no-repeat;
+    /*Define que a imagem inserida seja dimensionada de maneira que, mesmo sobrando espaço, nada será repetido.*/
+}

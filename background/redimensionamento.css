@@ -1,0 +1,31 @@
+﻿div{
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+    background-image: url("https://i0.wp.com/www.hawaiisurfpoint.com.br/wp-content/uploads/2017/01/saiba-mais-sobre-as-principais-competicoes-de-surf-do-mundo.jpeg?fit=1000%2C667&ssl=1");
+}
+#auto{
+    background-size: auto;
+    /*Ajusta a imagem automaticamente no elemento, porém dependendo do tamanho da imagem, não será exibida por completo ou irá se repetir várias vezes até preencher o tamanho do container*/
+}
+#cover{
+    background-size: cover;
+    /*Utilizando o valor cover, a imagem ocupará todo o elemento, porém pode cortar partes do conteúdo da imagem.*/
+}
+#contain{
+    background-size: contain;
+    /*Redimensiona a imagem para que todo o seu conteúdo apareça, porém pode repetir a imagem, caso sobre espaço no elemento*/
+}
+#valor{
+    background-size: 300px;
+    /*Ajusta a imagem com base nos valores passados, no caso, com apenas um parâmetro a dimensão trabalhada será altura*/    
+}
+#valor1-2{
+    background-size: 300px 300px;
+    /*Utilizando dois parâmetros, conseguimos trabalhar com altura e largura no redimensionamento da imagem.*/
+}
+#camadas{
+    background-image:url("https://www.iconninja.com/files/945/651/653/poring-icon.png"), url("https://i0.wp.com/www.hawaiisurfpoint.com.br/wp-content/uploads/2017/01/saiba-mais-sobre-as-principais-competicoes-de-surf-do-mundo.jpeg?fit=1000%2C667&ssl=1") ;
+    background-size: 300px 100%, cover;
+    /*Define o redimensionamento das camadas, podendo utilizar os parâmetros anteriores (contain, cover...) ou determinar os tamanhos com medidas de pixel ou porcentagem*/
+}

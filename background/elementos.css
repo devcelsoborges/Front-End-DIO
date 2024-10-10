@@ -1,0 +1,25 @@
+﻿div{
+    width: 300px;
+    height: 300px;
+}
+.exemplo{
+    background-color: palevioletred;
+    background-image: url("https://i0.wp.com/www.hawaiisurfpoint.com.br/wp-content/uploads/2017/01/saiba-mais-sobre-as-principais-competicoes-de-surf-do-mundo.jpeg?fit=1000%2C667&ssl=1");
+    /*Aplica uma imagem de fundo, seja por um servidor externo ou por conteúdo dentro do próprio diretório, porém a imagem ira se repetir várias vezes se for menor que o container, se for maior, apenas uma parta da imagem será exibida.*/
+}
+.exemplo2{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoVL-C5hYtHRECxR-kD1D-J5UifYtyKDVzPw&s");
+    /*Adiciona imagem ao background, porém se o tamanho for menor, a imagem se repetirá preenchendo o container*/
+}
+.linear-gradient{
+    background-image: linear-gradient(aquamarine, black);
+    /*Faz a transição entre cores*/
+}
+.repeat{
+    background-image: repeating-linear-gradient(to top, black 0 20px, green 20px 40px);
+    /*Faz a transição entre cores, se repetindo em determinados tamanhos*/
+}
+.camadas{
+    background-image: url("https://www.iconninja.com/files/945/651/653/poring-icon.png"), url("https://i0.wp.com/www.hawaiisurfpoint.com.br/wp-content/uploads/2017/01/saiba-mais-sobre-as-principais-competicoes-de-surf-do-mundo.jpeg?fit=1000%2C667&ssl=1");
+    /*Permite a inserção de várias camadas de imagens, uma sobrepondo a outra.*/
+}
