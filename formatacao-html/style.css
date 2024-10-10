@@ -1,0 +1,22 @@
+﻿.row{
+    margin: 5px;
+}
+label{
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    padding-right: 5px;
+}
+fieldset{
+    margin: 5px 0;
+    border-radius: 10px;
+    border-color: aqua;
+}
+.fundo{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtWG8JucmVRJpa1jAF7GXjSqGXETUDKDdYDg&s);
+    background-size: contain;
+    
+}

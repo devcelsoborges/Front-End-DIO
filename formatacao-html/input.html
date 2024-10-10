@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Pizzaria</title>
+</head>
+
+<body>
+    <h1>Menu de pizza</h1>
+    <form method="post">
+        <p>Quais adicionais você deseja?</p><br>
+        <label><input type="checkbox" name="opcional[]" value="queijo">+ queijo</label><br>
+        <label><input type="checkbox" name="opcional[]" value="calabresa">+ calabresa</label><br>
+        <label><input type="checkbox" name="opcional[]" value="cebola">+ cebola</label><br>
+        <label><input type="checkbox" name="opcional[]" value="azeitona">+ azeitona</label><br>
+        <p>Borda recheada?</p><br>
+        <label><input type="radio" name="borda" value="sim">Sim</label><br>
+        <label><input type="radio" name="borda" value="nao">Não</label><br>
+        <p>Bebida</p>
+        <label><input type="radio" name="bebida" value="suco">Suco</label><br>
+        <label><input type="radio" name="bebida" value="agua">Água</label><br>
+        <label><input type="radio" name="bebida" value="refrigerante">Refrigerante</label><br>
+        <label><input type="radio" name="bebida" value="nenhuma">Nenhuma</label><br>
+        <button>Enviar pedido</button>
+
+    </form>
+
+</body>
+
+</html>

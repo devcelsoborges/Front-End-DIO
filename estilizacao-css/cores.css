@@ -1,0 +1,62 @@
+﻿body{
+    background-color: cadetblue;
+        /*Define uma cor para o plano de fundo*/
+}
+li{
+    background-color: bisque;
+    /*Define uma cor para o plano de fundo*/
+}
+#pre-definidas{
+    color: blue;
+    /*Define uma cor pré-definida para o elemento*/
+}
+#current-color{
+    background-color: transparent;
+    color: purple;
+    border: 2px solid currentColor;
+    /*Current color aplica a cor ao elemento igual à cor definida em color*/
+}
+#hexadecimal{
+    color: #13AAAA;
+    /*Define uma cor utilizando o método hexadecimal, varia do número 0 até 9 e dos caracteres A até F. Segue o padrão de seleção de cores RGB*/
+}
+#hexadecimal-transparencia{
+    background: #000000;
+    color: #13AAAAaa;
+    /*Para utilizar o canal alpha que define a transparência, método hexadecimal, basta adicionar mais dois caractéres no mesmo padrão 0-9, a-f*/
+    /*Define uma cor utilizando o método hexadecimal, varia do número 0 até 9 e dos caracteres A até F. Segue o padrão de seleção de cores RGB*/
+}
+#rgb{
+    background: rgb(0,0,0);
+    color: rgb(113, 147, 79);
+    /*Define cores com valores numéricos de 0 a 255, em três parâmetros, sendo consecultivamente Red, Green e Blue*/
+}
+#rgba{
+    background: rgba(0, 0, 0, 0.568);
+    color: rgba(240, 234, 234, 0.616);
+     /*Define cores com valores numéricos de 0 a 255, em três parâmetros, sendo consecultivamente Red, Green e Blue com adição do canal alpha(define o nível de transparência que a cor deve ter)*/
+
+
+}
+#hsl{
+    background: hsl(20,90%,20%);
+    color: hsl(120, 90%,40%);
+    /*HSL (Hue, Saturation, lightness)
+    - Hue (Matiz): É o grau na roda de cores (de 0 a 360 graus)
+        - 0 ou 360 é vermelho
+        - 120 é verde
+        - 240 é azul
+    - Saturation (Saturação): Valor percentual
+        - 0% um tom de cinza
+        - 100% cor total
+    - Lightness (Luminosidade): Luminosidade da cor
+        - 0% é branco
+        - 100% é preto  
+    */
+}
+#hsla{
+    background-color: hsla(150,100%,50%,0.5);
+    color: hsla(360,100%,40%,0.8);
+    /*O HSLA segue o mesmo padrão do HSL, com o incremento da transparência*/
+
+}
