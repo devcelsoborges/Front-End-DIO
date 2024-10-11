@@ -1,0 +1,13 @@
+﻿div{
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+    border: 2px blue solid;
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-image: url("https://i0.wp.com/www.hawaiisurfpoint.com.br/wp-content/uploads/2017/01/saiba-mais-sobre-as-principais-competicoes-de-surf-do-mundo.jpeg?fit=1000%2C667&ssl=1");
+}
+#position{
+    background-position: 80px 80px;
+    /*Movimenta a imagem dentro do container, assumindo valores (top, right, center, bottom e left) ou (valores em pixel, ex: 30px 20px)*/
+}
