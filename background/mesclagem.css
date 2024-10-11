@@ -1,0 +1,54 @@
+﻿div {
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+    border: 15px blue dashed;
+    background-size: 100% 100%;
+    background-color: blueviolet;
+    background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+            hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+            hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+            hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+            hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+            hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px),
+        repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+            hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+            hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+            hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+            hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+            hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px);
+    overflow: auto;
+    /*Overflow auto cria uma barra de scroll dentro do container, caso o texto ultrapasse o seu limite.*/
+    padding: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    background-blend-mode: lighten;
+    /*Blend mode mescla as cores de fundo com background image*/
+}
+
+#padding-box {
+    background-origin: padding-box;
+    /*Valor padrão da propriedade, onde a imagem de fundo não cobre a borda*/
+}
+
+#border-box {
+    background-origin: border-box;
+    /*A imagem vai cobrir o espaçamento interno inteiro, incluindo a borda*/
+}
+
+#content-box {
+    background-origin: content-box;
+    /*A imagem não cobrirá a borda e nem o espaçamento interno do elemento*/
+}
+
+#text {
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    /*Utilização do webkit com cor transparente para estilizar o texto inserido dentro do container com a imagem de fundo.*/
+}
+
+p {
+    text-align: center;
+}
