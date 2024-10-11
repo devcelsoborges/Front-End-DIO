@@ -1,0 +1,25 @@
+﻿body{
+    height: 200vh;
+}
+div{
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+    border: 2px blue solid;
+    background-size: contain;
+    background-image: url("https://i0.wp.com/www.hawaiisurfpoint.com.br/wp-content/uploads/2017/01/saiba-mais-sobre-as-principais-competicoes-de-surf-do-mundo.jpeg?fit=1000%2C667&ssl=1");
+    overflow: auto;
+    /*Overflow auto cria uma barra de scroll dentro do container, caso o texto ultrapasse o seu limite.*/
+}
+#fixed{
+    background-attachment: fixed;
+    /*Fixa a imagem do background no body, fazendo com que ao rolar a página, a imagem permaneça no local fixo*/
+}
+#scroll{
+    background-attachment: scroll;
+    /*Fixa a imagem e ao movimentar o scroll que contém dentro do container, faz com que o conteúdo não se mova também*/
+}
+#local{
+    background-attachment: local;
+    /*Move a imagem de fundo de acordo com o scroll do container*/
+}
