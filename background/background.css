@@ -1,0 +1,20 @@
+﻿div{
+    margin-bottom: 30px;
+    width: 300px;
+    height: 300px;
+    border: 15px blue dashed;
+    color: white;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    background:
+    url("https://i0.wp.com/www.hawaiisurfpoint.com.br/wp-content/uploads/2017/01/saiba-mais-sobre-as-principais-competicoes-de-surf-do-mundo.jpeg?fit=1000%2C667&ssl=1")/*image*/ 
+    top center /*position*// 
+    200px 200px/*size*/
+    no-repeat/*repeat*/
+    fixed/*attachment*/
+    padding-box/*origin*/
+    content-box/*clip*/
+    red/*color*/
+    ;
+}
