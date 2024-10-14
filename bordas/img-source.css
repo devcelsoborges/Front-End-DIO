@@ -1,0 +1,48 @@
+﻿div{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-bottom: 30px;
+    border: 30px solid;
+    margin: 50px auto;
+}
+#exemplo1{
+    border-image-source: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJwbvz2wNDbINpFWd72EEqCpMqr1DLEEz5Fg&s");
+    /*Permite a utilização de imagens na borda, sejam de um servidor externo ou do próprio diretório.*/
+}
+#exemplo2{
+    border-image-source: linear-gradient(red, green);
+}
+#exemplo3{
+    border-image-source: url('imagens/Stars.png');
+    border-image-slice: 90;
+    border-image-repeat: repeat;
+    /*A propriedade indica o quanto da imagem será aplicada na borda*/
+}
+#exemplo4{
+    border-image-source: linear-gradient(red, blue);
+    border-image-slice: 90;
+}
+#exemplo5{
+    border-image-source: linear-gradient(red, green);
+    border-image-slice: 20;
+    border-width: 10px 40px
+    /*Representa o qual a largura da borda na imagem.*/;
+}
+#exemplo6{
+    border-image-source: url('imagens/Stars.png');
+    border-image-slice: 90;
+    border-image-repeat:repeat ;
+    border-image-outset: 30px;
+    /*vai definiir qual a distância da borda em relação à imagem, aceitando valores para cada um dos lados da borda.*/
+    /*vai dividir a imagem para preencher toda a area das bordas, pode assumir valores (round, space, repeat ou strech) ou a combinação deles*/
+}
+#exemplo7{
+    border-image: url('imagens/Stars.png') /*source*/ 
+    70 //*slice*/ 
+    15px/ /*width*/
+    5px /*outset*/
+    round/*repeat*/;
+    /*propriedade resumida, onde podemos utilizar todos os parâmetros de uma só vez.*/
+}
+
