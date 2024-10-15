@@ -1,0 +1,31 @@
+﻿@font-face {
+    font-family: Roboto; /*Cria define o nome de uma nova fonte*/
+    src: url('assets/Roboto-Regular.ttf'); /*Busca o caminho da fonte*/
+    font-weight: lighter; /*Define a a espessura da fonte*/
+    
+}
+h1{
+    font-family: Roboto;
+    font-weight: lighter;
+}
+
+li{
+    font-weight: bold;
+    font-style: italic; /*Define o estilo da fonte, nesse caso, itálico.*/
+    font-size: 30px;/*altera o tamanho da fonte utilizando números ou palavras-chave (xx-small, x,small, small, medium, large, x-large, xxlarge) como parâmetro.*/
+}
+
+#ex1{
+    font-style: normal;
+    font-variant: small-caps;/*Deixa todo o conteúdo em caixa alta, mas ainda diferencia as letras que de fato estão em caixa alta.*/
+    font-stretch: ultra-condensed;
+}
+
+#ex2{
+    font-style: italic;
+}
+
+#ex3{
+    font-style: oblique;
+}
+
