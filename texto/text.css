@@ -1,0 +1,40 @@
+﻿#text-transform{
+    text-transform: uppercase;
+    /*
+    - uppercase: transforma todas em maiúsculo
+    - capitalize: transforma apenas as primeiras letras das palavras em maiúsculo
+    - lowercase: transforma todas em minúsculo
+    */
+}
+#text-align{
+    padding: 10px;
+    background-color: aqua;
+    border: 1px solid black;
+    text-align: right;
+    /*Alinha o texto para direita, esquerda, centro ou justifica.*/
+}
+h1 + p{
+    color: red;
+    text-decoration: underline;
+    /*
+    - underline: adiciona uma linha abaixo do texto
+    line-trhough: adiciona uma linha sobrepondo o texto
+    - overline: posiciona uma linha acima do texto
+    */
+    text-decoration-style: wavy;
+    /*Define o estilo da linha do text decoration*/
+    text-decoration-color: aqua;
+    /*define a cor do text decoration
+    */
+    text-decoration-thickness: 5px;
+    /*define a espessura do text decoration*/
+}
+a{
+    text-decoration: none;
+    /*remove o sublinhado do link*/
+}
+#text-ident{
+    text-indent: 10px;
+    /*>Define o recuo da primeira linha do nosso texto*/
+}
+
