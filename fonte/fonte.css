@@ -1,12 +1,14 @@
-﻿@font-face {
+﻿@import url("global.css");
+@font-face {
     font-family: Roboto; /*Cria define o nome de uma nova fonte*/
     src: url('assets/Roboto-Regular.ttf'); /*Busca o caminho da fonte*/
     font-weight: lighter; /*Define a a espessura da fonte*/
     
 }
 h1{
-    font-family: Roboto;
-    font-weight: lighter;
+    font-family: LeagueMono;
+    font-stretch: narrower;
+    /*Altera o espaçamento entre as letras*/
 }
 
 li{
@@ -28,4 +30,10 @@ li{
 #ex3{
     font-style: oblique;
 }
+#ex4{
+    font-family: LeagueMono;
+    font-stretch: condensed;
+}
+
+
 

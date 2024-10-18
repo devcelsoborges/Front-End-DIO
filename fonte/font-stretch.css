@@ -1,0 +1,42 @@
+﻿@import url("global.css");
+
+*{
+    font-family: LeagueMono;
+    font-stretch: narrower;
+    /*Altera o espaçamento entre as letras*/
+}
+
+#ex1{
+    
+    font-stretch: condensed;
+}
+
+#ex2{
+    font-stretch: expanded;
+    font-family: Regular;
+}
+
+#ex3{
+    font-stretch: extra-condensed;
+}
+#ex4{
+    font-stretch:narrower ;
+}
+#ex5{
+    font-stretch: normal;
+}
+#ex6{
+    font-stretch: semi-condensed;
+}
+#ex7{
+    font-stretch: semi-expanded;
+}
+#ex8{
+    font-stretch: ultra-condensed;
+}
+#ex9{
+    font-stretch: ultra-expanded;
+}
+#ex10{
+    font-stretch: wider;
+}
