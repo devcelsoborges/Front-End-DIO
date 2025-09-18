@@ -1,0 +1,151 @@
+:root {
+  --bg: #0b1220;
+  --card: #0f1724;
+  --accent: #60a5fa;
+  --glass: rgba(255,255,255,0.03);
+  --muted: #9ca3af;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg,#071428 0%,#071024 100%);
+  color: #e6eef8;
+}
+
+.container {
+  max-width: 920px;
+  margin: 36px auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.stats {
+  display: flex;
+  gap: 12px;
+}
+
+.stats span {
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  background: linear-gradient(90deg,var(--accent),#38bdf8);
+  color: #04263a;
+  font-weight: 700;
+}
+
+select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.04);
+  background: transparent;
+  color: inherit;
+}
+
+.board {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+}
+
+/* cartas */
+.card {
+  position: relative;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 32px;
+  user-select: none;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+/* faces da carta */
+.card .face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  backface-visibility: hidden; /* 🔑 esconde a face de trás */
+}
+
+.card .back {
+  background: linear-gradient(180deg, var(--card), #0b1220);
+  border: 1px solid rgba(255,255,255,0.03);
+  color: var(--muted);
+  transform: rotateY(0deg);
+}
+
+.card .front {
+  background: linear-gradient(180deg, #ffffff13, rgba(255,255,255,0.02));
+  transform: rotateY(180deg); /* fica virada de costas até flipar */
+}
+
+/* quando a carta está virada */
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* carta já combinada */
+.card.matched {
+  outline: 3px solid rgba(96,165,250,0.18);
+}
+
+.footer {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+/* grids responsivos conforme dificuldade */
+@media(min-width:1000px){
+  .board[data-pairs="8"]{grid-template-columns:repeat(4,1fr)}
+  .board[data-pairs="12"]{grid-template-columns:repeat(6,1fr)}
+  .board[data-pairs="18"]{grid-template-columns:repeat(6,1fr)}
+}
+
+@media(max-width:999px){
+  .board[data-pairs="8"]{grid-template-columns:repeat(4,1fr)}
+  .board[data-pairs="12"]{grid-template-columns:repeat(4,1fr)}
+  .board[data-pairs="18"]{grid-template-columns:repeat(3,1fr)}
+}

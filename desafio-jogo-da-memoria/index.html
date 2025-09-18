@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jogo da Memória - Emojis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Jogo da Memória (Emojis)</h1>
+      <p class="subtitle">Encontre todos os pares — diversão com HTML, CSS e JavaScript.</p>
+    </header>
+
+    <section class="controls">
+      <div class="stats">
+        <span>Movimentos: <strong id="moves">0</strong></span>
+        <span>Tempo: <strong id="timer">00:00</strong></span>
+        <span>Pares: <strong id="matches">0</strong>/<span id="totalPairs">8</span></span>
+      </div>
+      <div class="actions">
+        <button id="restartBtn">Reiniciar</button>
+        <select id="difficulty">
+          <option value="8">Fácil (8 pares)</option>
+          <option value="12">Médio (12 pares)</option>
+          <option value="18">Difícil (18 pares)</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="board" class="board" aria-live="polite"></section>
+
+    <footer class="footer">Desenvolvido com ❤️ — Jogo da memória com emojis</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
