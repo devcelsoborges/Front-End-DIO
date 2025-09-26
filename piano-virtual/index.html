@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Piano Virtual — Completo</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body class="dark">
+<header>
+  <h1>Piano Virtual — Completo</h1>
+  <div class="top-controls">
+    <label>Tema: <select id="theme-select"><option value="dark">Escuro</option><option value="light">Claro</option></select></label>
+    <label>Óctava base: <span id="octave-display">4</span></label>
+    <button id="oct-down">-</button><button id="oct-up">+</button>
+    <label>Timbre: <select id="timbre-select"><option value="acoustic">Acoustic</option><option value="electric">Electric</option><option value="pad">Pad</option><option value="synth">Synth (osc)</option></select></label>
+    <label><input type="checkbox" id="sustain"> Sustain</label>
+  </div>
+</header>
+<main>
+  <section class="left">
+    <div class="controls">
+      <div class="metronome">
+        <label>Metronomo BPM: <input id="bpm" type="number" min="40" max="240" value="100"/></label>
+        <label>Divisão: <select id="div"><option value="4">1/4</option><option value="8">1/8</option><option value="16">1/16</option></select></label>
+        <button id="met-toggle">Start Metronome</button>
+        <label><input type="checkbox" id="quantize"> Quantizar gravação</label>
+      </div>
+      <div class="recording">
+        <button id="record-btn">Gravar</button><button id="stop-btn" disabled>Parar</button><button id="play-btn" disabled>Tocar</button>
+        <button id="export-midi">Exportar MIDI</button>
+        <input id="import-midi" type="file" accept=".mid,.midi"/>
+        <div id="record-log">Sem gravação</div>
+      </div>
+      <div class="audio-params">
+        <label>Volume <input id="volume" type="range" min="0" max="1" step="0.01" value="0.8"/></label>
+        <label>Attack <input id="attack" type="range" min="0" max="1" step="0.01" value="0.02"/></label>
+        <label>Release <input id="release" type="range" min="0" max="2" step="0.01" value="0.3"/></label>
+      </div>
+    </div>
+    <div id="piano" class="piano"></div>
+  </section>
+  <aside class="right">
+    <h3>Informações</h3>
+    <p>Gravação suporta samples locais (assets/samples/{acoustic,electric,pad}/&lt;midi&gt;.wav). Se o navegador não carregar samples, usa sintetizador.</p>
+    <p>Exporta MIDI padrão (formato 0) com tempo configurado pelo metronome.</p>
+    <p>Use teclado: A W S E D F T G Y H U J K para tocar (mapeamento por semitom).</p>
+  </aside>
+</main>
+<footer><small>Projeto completo — pronto para testar. Desenvolvido para Celso.</small></footer>
+<script src="script.js"></script>
+</body>
+</html>

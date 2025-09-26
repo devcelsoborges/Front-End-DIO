@@ -1,0 +1,1 @@
+Projeto completo de Piano Virtual com samples locais, MIDI export (format 0), metronome, quantize, timbres e UI.
