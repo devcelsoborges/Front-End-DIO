@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yu-Gi-Oh Mini — Enhanced Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Yu-Gi-Oh Mini — Enhanced Demo</h1>
+    <div class="life-bars">
+      <div>Jogador: <span id="player-life">8000</span> LP</div>
+      <div>CPU: <span id="cpu-life">8000</span> LP</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hand" id="player-hand">
+      <h2>Sua mão</h2>
+      <div class="cards" id="hand-cards"></div>
+    </section>
+
+    <section class="field">
+      <div class="field-row">
+        <h3>Campo CPU</h3>
+        <div class="cards" id="cpu-field"></div>
+      </div>
+
+      <div class="field-row">
+        <h3>Campo Jogador</h3>
+        <div class="cards" id="player-field"></div>
+      </div>
+    </section>
+
+    <aside class="controls">
+      <button id="draw-btn">Comprar carta</button>
+      <button id="end-btn">Encerrar turno</button>
+      <div id="log" class="log"></div>
+    </aside>
+  </main>
+
+  <footer>
+    <small>Imagens das cartas carregadas via YGOPRODeck (images.ygoprodeck.com).</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
