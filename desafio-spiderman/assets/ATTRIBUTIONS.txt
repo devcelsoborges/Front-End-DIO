@@ -1,0 +1,24 @@
+ATTRAIBUTIONS / LICENSES FOR INCLUDED IMAGES
+
+1) Spider-Man.jpg
+   Source: Wikimedia Commons
+   File URL: https://upload.wikimedia.org/wikipedia/commons/5/52/Spider-Man.jpg
+   License: Creative Commons Attribution-ShareAlike 2.0 (CC BY-SA 2.0)
+   Attribution: Photo by Gage Skidmore (https://www.flickr.com/photos/22007612@N05/9355658502/)
+   Notes: You must provide attribution and share-alike for derivatives.
+
+2) spiderman_ice.jpg
+   Source: PublicDomainPictures.net (CC0 Public Domain)
+   File URL: https://www.publicdomainpictures.net/pictures/20000/velka/spiderman.jpg
+   License: CC0 / Public Domain
+   Notes: Free for personal and commercial use; no attribution required (but we include it as courtesy).
+
+3) placeholder.jpg
+   A generated placeholder image included in the package (original art).
+
+HOW TO RUN the included download script (download-assets.sh):
+  - On Linux/macOS with wget installed:
+      bash download-assets.sh
+  - It will download the above two images into assets/images/ and leave placeholder.jpg untouched.
+
+IMPORTANT: Verify license terms on the source pages before using commercially. Respecting the CC BY-SA requirement is your responsibility when publishing derivatives.
