@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mundo Invertido — Portal Sombrio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🔮 Mundo Invertido</div>
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#portal">Portal</a>
+      <a href="#inscricao">Inscreva-se</a>
+    </nav>
+    <button id="theme-toggle">🔁 Trocar Tema</button>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Bem-vindo ao Mundo Invertido</h1>
+        <p>Entre se tiver coragem. A escuridão te observa.</p>
+        <button id="enter-button">Abra o Portal</button>
+      </div>
+    </section>
+
+    <section id="sobre" class="section sobre">
+      <h2>O que é o Mundo Invertido?</h2>
+      <p>Aquele plano sombrio que espelha Hawkins, mas corrompido... Aqui, monstros espreitam e a lógica se distorce.</p>
+      <div class="img-wrapper">
+        <img src="assets/inverted-forest.jpg" alt="Floresta do Mundo Invertido" />
+      </div>
+    </section>
+
+    <section id="experiencia" class="section experiencia">
+      <h2>Experiência Interativa</h2>
+      <div class="cards">
+        <div class="card" data-anim="fade-up">
+          <h3>Sombras Vivem</h3>
+          <p>Você ouvirá sussurros emergindo dos cantos.</p>
+        </div>
+        <div class="card" data-anim="fade-up" data-delay="200">
+          <h3>Visões Distorcidas</h3>
+          <p>Veja imagens que quebram sua sanidade por segundos.</p>
+        </div>
+        <div class="card" data-anim="fade-up" data-delay="400">
+          <h3>Portal Aberto</h3>
+          <p>Teste sua coragem atravessando o limiar do desconhecido.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portal" class="section portal">
+      <h2>Abra o Portal</h2>
+      <div class="portal-container">
+        <div id="portal-effect" class="portal-effect"></div>
+        <button id="activate-portal">Ativar</button>
+      </div>
+    </section>
+
+    <section id="inscricao" class="section inscricao">
+      <h2>Inscreva-se para a Jornada</h2>
+      <form id="form-inscricao">
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu e-mail" required />
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="msg-status" class="status-message"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Mundo Invertido. Inspirado por Stranger Things.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
